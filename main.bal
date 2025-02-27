@@ -8,7 +8,7 @@ type ClientRoute record {|
 
 isolated table<ClientRoute> key(clientID) routes = table [
     {clientID: "uat", clientURL: "https://rt1-uat.raintreeinc.com/uat/api/"},
-    {clientID: "sqa", clientURL: "https://rt1-sqa.raintreeinc.com/sqa/api"}
+    {clientID: "sqa", clientURL: "https://rt1-sqa.raintreeinc.com/sqa/api/"}
 ];
 
 service /proxy on new http:Listener(8086) {
